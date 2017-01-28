@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: train-nr
+  host: train-nr
+  disk_quota: 1024M
+  services:
+  - train-nr-cloudantNoSQLDB
+  - train-nr-iotf-service
